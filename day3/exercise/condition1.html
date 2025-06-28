@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตรวจสอบอายุ</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const age = prompt("กรุณากรอกอายุของคุณ:"); 
+const numericAge = parseInt(age); 
+
+if (numericAge > 120) { 
+    console.log("อายุไม่สามารถเกิน 120 ปีได้");
+}else if(numericAge < 0) {
+    console.log("อายุไม่สามารถเป็นค่าลบได้");
+}else if(numericAge >= 18) {
+    console.log("เข้าได้");
+}
+else {
+    console.log("เข้าไม่ได้");
+}
+
+    </script>
+</body>
+</html>
