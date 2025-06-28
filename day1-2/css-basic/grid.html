@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masonry Grid Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1rem;
+      font-family: sans-serif;
+    }
+
+    .masonry-container {  
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 240px;
+    }
+    .masonry-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .tall-image {
+  grid-row:  span 2 ;
+}
+
+.wide-image {
+  grid-column:  span 2 ;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="masonry-container">
+    <img class="tall-image" src="image/bg.jpg" alt="">
+    <img class="wide-image" src="image/cat1.jpg" alt="">
+    <img class="wide-image" src="image/cat.jpg" alt="">
+    <img class="tall-image" src="image/cat1.jpg" alt="">
+    <img class="wide-image" src="image/cat.jpg" alt="">
+    <img class="wide-image" src="image/cat1.jpg" alt="">
+    <img class="tall-image" src="image/cat.jpg" alt="">
+    <img class="wide-image" src="image/cat1.jpg" alt="">
+    <img class="wide-image" src="image/cat1.jpg" alt="">
+  </div>
+
+</body>
+</html>
