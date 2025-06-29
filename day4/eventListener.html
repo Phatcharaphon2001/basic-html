@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="submit">Submit</button>
+
+    <script>
+        const btn = document.querySelector('.submit');
+
+        const onClicked = () => {
+            document.body.style.backgroundColor = 'red';
+        }
+        btn.addEventListener('click', onClicked);
+
+    </script>
+</body>
+</html>

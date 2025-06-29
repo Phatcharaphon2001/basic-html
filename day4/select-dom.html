@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+        
+    }
+</style>
+<body>
+    <p class="header">หัวข้อ1</p>
+    <p id="header">หัวข้อ2</p>
+    <div>
+        <p>หัวข้อย่อย</p>
+    </div>
+    <input type="text" class="name">
+
+    <script>
+        const header = document.querySelector('.header');
+        // header.style.color = 'blue';
+
+        //for loop ในการจัดการกับ element ใน classname
+        // for(let i = 0; i < header.length; i++) {
+        //     header[i].style.color = 'blue';
+        // }
+        //forEach
+        // Array.from(header).forEach(element => {
+           
+        // });
+        header.style.color = 'blue';
+        
+        console.log(header);
+    </script>
+
+</body>
+</html>

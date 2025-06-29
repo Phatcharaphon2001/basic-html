@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="radio" class="gender" name="gender" value="male" onchange="selectedGender()">ชาย
+    <input type="radio" class="gender" name="gender" value="female" onchange="selectedGender()">หญิง
+    <input type="radio" class="gender" name="gender" value="other"onchange="selectedGender()">อื่น ๆ
+
+
+    <select id="cars" name="cars" onchange="selectedCar()">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option> -->
+
+    <button onclick="onClick()">Click 1 times</button>
+  </select>
+
+    <script>
+
+        const btn = document.querySelector('button');
+        const onClick = () => {
+            console.log('click');
+            btn.setAttribute('disabled', true);
+            if(btn.getAttribute('disabled') === 'true') {
+                btn.innerText = 'loading...'
+            }
+        }
+    //    const gender = document.querySelectorAll('.gender');
+    //    const cars = document.querySelectorAll('#cars option');
+    //    console.log(gender);
+    //    console.log(cars);
+    //    let carlist = [];
+
+    //    const selectedCar = () => {
+    //     for(let i=0; i < cars.length; i++) {
+    //         if(cars[i].selected && carlist.includes(cars[i].value) === false) {
+    //             carlist.push(cars[i].value);
+    //             console.log(carlist);
+    //         }
+    //     }
+    //    }
+
+    //    const selectedGender = () => {
+    //         for(let i=0; i < gender.length; i++) {
+    //             if(gender[i].checked) {
+    //                 console.log(gender[i].value);
+    //             }
+    //         }
+    //    }
+
+    </script>
+</body>
+</html>
